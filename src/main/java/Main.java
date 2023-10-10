@@ -7,25 +7,34 @@ public class Main {
         KeyHandler keyHandler = new KeyHandler();
         camera.setScene(scene);
 
-        Cube cube = new Cube(scene);
-        cube.setPosition(new Vector3(0, 0, 50));
+        /*Cube cube = new Cube(scene);
+        cube.setPosition(new Vector3(0, 0, 15));*/
+
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                for (int k = 0; k < 1; k++) {
+                    Cube cube = new Cube(scene);
+                    cube.setPosition(new Vector3(i * 15, -15 + (k * 15), 15 + (j * 15)));
+                }
+            }
+        }
 
         keyHandler.setOnPressedAction((key) -> {
             if (key == 'w')
-                cube.setPosition(cube.getPosition().add(new Vector3(0, 0, 1)));
+                camera.translate(new Vector3(0, 0, 1));
             if (key == 's')
-                cube.setPosition(cube.getPosition().add(new Vector3(0, 0, -1)));
+                camera.translate(new Vector3(0, 0, -1));
             if (key == 'd')
-                cube.setPosition(cube.getPosition().add(new Vector3(1, 0, 0)));
+                camera.translate(new Vector3(1, 0, 0));
             if (key == 'a')
-                cube.setPosition(cube.getPosition().add(new Vector3(-1, 0, 0)));
+                camera.translate(new Vector3(-1, 0, 0));
         });
 
         double i = 0;
-        int deltaTime = 35;
+        int deltaTime = 5;
         while (true) {
             Vector3 rotationAngles = new Vector3(Math.toRadians((double) deltaTime / 20), Math.toRadians((double) deltaTime / 10), Math.toRadians((double) deltaTime / 15));
-            cube.rotate(rotationAngles.multiply(0.25));
+            //cube.rotate(rotationAngles.multiply(0.25));
             //cube.setPosition(new Vector3((Math.cos(i * deltaTime * 0.0025) * 10) - 0, 0, 0));
             camera.drawScene();
             i += 0.01 * deltaTime;

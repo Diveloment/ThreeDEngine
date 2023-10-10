@@ -71,6 +71,8 @@ public class Camera {
         }
 
         for (Polygon polygon : polygons) {
+            if (polygon.computeCenter().z <= this.cameraPosition.z)
+                continue;
             List<Vertex> polygonVertices = polygon.getVertices();
             List<Point> points = new ArrayList<Point>();
 
@@ -126,6 +128,15 @@ public class Camera {
         mvpMatrix.set(projectionMatrix);
         mvpMatrix.mul(viewMatrix);
         this.cameraPosition = cameraPosition;
+    }
+
+    public void translate(Vector3 addCameraPosition) {
+        this.cameraPosition = this.cameraPosition.add(addCameraPosition);
+        this.cameraTarget = this.cameraTarget.add(addCameraPosition);
+        viewMatrix = new Matrix4f();
+        viewMatrix.lookAt(cameraPosition.toVector3f(), cameraTarget.toVector3f(), cameraUp);
+        mvpMatrix.set(projectionMatrix);
+        mvpMatrix.mul(viewMatrix);
     }
 
     public Vector3 getCameraTarget() {

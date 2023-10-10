@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bbc5fc4e-43e5-42ae-9f3f-edd2a1e1f18b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Cube.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/KeyHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Polygon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vector3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Vertex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/maven/archetype.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/main/java/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/archetype-resources/src/test/java/AppTest.java" afterDir="false" />
+    <list default="true" id="bbc5fc4e-43e5-42ae-9f3f-edd2a1e1f18b" name="Changes" comment="new commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,12 +72,37 @@
       <option name="presentableId" value="Default" />
       <updated>1695219344700</updated>
       <workItem from="1695219345780" duration="11698000" />
-      <workItem from="1695380287975" duration="10978000" />
+      <workItem from="1695380287975" duration="11526000" />
+      <workItem from="1696437219051" duration="2038000" />
+      <workItem from="1696865015847" duration="231000" />
     </task>
+    <task id="LOCAL-00001" summary="new commit">
+      <created>1695396858396</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695396858396</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="new commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -111,7 +119,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/Camera.java</url>
-          <line>90</line>
+          <line>92</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
       </breakpoints>
